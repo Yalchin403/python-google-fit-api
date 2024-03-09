@@ -1,0 +1,12 @@
+uvicorn
+fastapi
+gunicorn
+sqlalchemy
+passlib
+pydantic-settings
+jinja2
+google-auth-oauthlib
+psycopg2-binary
+alembic
+httpx
+python-multipart

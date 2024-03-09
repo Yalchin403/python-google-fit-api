@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 100px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-google {
+            background-color: #dd4b39;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .btn-google:hover {
+            background-color: #c23321;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Use SSO Login</h2>
+        <a href="/auth/google/login">
+            <div class="text-center">
+                <button class="btn btn-google">
+                    <img width="30px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png"
+                        alt="">
+                    <i class="fab fa-google"></i> Login with Google
+                </button>
+            </div>
+        </a>
+    </div>
+
+    <!-- Google Platform Library -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KIT.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

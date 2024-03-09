@@ -1,0 +1,17 @@
+version: "3.9"
+volumes:
+  test_data:
+
+
+services:
+  postgres:
+    image: postgres:alpine3.17
+    environment:
+      - POSTGRES_DB=fitdb
+      - POSTGRES_USER=fitdbadmin
+      - POSTGRES_PASSWORD=fitdbadminpassword12
+    volumes:
+      - "test_data:/var/lib/postgresql/data"
+    restart: unless-stopped
+    ports:
+      - "5432:5432"

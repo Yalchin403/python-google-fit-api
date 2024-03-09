@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-section {
+            flex: 1;
+            background-image: url('https://img.freepik.com/premium-vector/man-doing-exercises-with-dumbbells-training-home-with-sport-equipment-sport-muscle-building-sportive-person-doing-arm-workout-gym-trainer-conducts-strength-training\_458444-1199.jpg?w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .text-container {
+            max-width: 80%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="text-container">
+                <p>Using our app analyze your already existing data in your fitness app</p>
+            </div>
+        </div>
+        <div class="right-section">
+            <a href="/auth/login/">
+                <button class="login-btn">Login</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
