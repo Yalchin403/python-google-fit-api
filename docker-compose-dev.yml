@@ -17,7 +17,7 @@ services:
     build: .
     command: >
       bash -c "alembic upgrade head &&
-              uvicorn apps.main:app --port 8000 --host 0.0.0.0 --reload"
+              uvicorn apps.main:app --port 8000 --host 0.0.0.0"
     env_file:
       - .envs/.dev.env
     depends_on:
